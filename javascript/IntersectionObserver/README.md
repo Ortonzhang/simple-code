@@ -4,4 +4,4 @@
 
 ![布局](images/layout.png)
 
-关于`IntersectionObserver`请戳👇[简书]()
+关于`IntersectionObserver`请戳👇[简书](https://www.jianshu.com/p/84a86e41eb2b)
