@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            box-sizing: border-box;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background-color: #ccc;
+            border-radius: 50%;
+            left: 40%;
+            top: 200px;
+
+        }
+        .num{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: #fff;
+            border-radius: 50%;
+            width: 180px; 
+            height: 180px;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            line-height: 180px;
+            font-size: 32px;
+        }
+        
+        
+        .clip{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 10px solid #ccc;
+            border-radius: 50%;
+            clip: rect(0, 200px, 200px, 100px);
+        }
+        .left{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 10px solid lightblue;
+            border-radius: 50%;
+            clip: rect(0 100px 200px 0);
+            top: -10px;
+            left: -10px;
+        }
+        .right{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 10px solid lightblue;
+            border-radius: 50%;
+            clip: rect(0 200px 200px 100px);
+            top: -10px;
+            left: -10px;
+        }
+        .width-none{
+            width: 0;
+        }
+        .auto{
+            clip: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="clip">
+            <div class="left"></div>
+            <div class="right width-none"></div>
+        </div>
+        <div class="num">
+
+        </div>
+    </div>
+    <script >
+        let clip = document.querySelector('.clip'),
+        left = document.querySelector('.left'),
+        right = document.querySelector('.right'),
+        num = document.querySelector('.num'),
+        rotate = 0;
+    
+        let loop = setInterval(() => {
+            if(rotate >= 100){
+                rotate = 0;
+                right.classList.add('width-none');
+                clip.classList.remove('auto');
+            } else if(rotate > 50){
+                right.classList.remove('width-none');
+                clip.classList.add('auto');
+            }
+            rotate++;
+            left.style.transform = 'rotate('+ 3.6*rotate + 'deg)';
+            num.innerHTML = `${rotate}%`
+        },100)
+
+    </script>
+</body>
+</html>
