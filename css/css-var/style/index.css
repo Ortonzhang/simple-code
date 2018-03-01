@@ -1,0 +1,14 @@
+:root{
+    --bg-color: lightblue;
+    --文字颜色: white;
+    --fong-size: 30;
+}
+body{
+    background-color: var(--bg-color);
+}
+div{
+    color: var(--文字颜色);
+    /* font-size: var(--fong-size)px; */
+    font-size: calc(var(--fong-size) * 1px);    
+}
+
