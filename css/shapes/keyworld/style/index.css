@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flow-root;  /* 创建一个BFC */
+}
+div{
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: lightskyblue;
+    border-radius: 50%;
+    shape-outside: margin-box; 
+    /* border: 30px solid lightcoral; */  /* 方便理解，测试padding-box和margin-box的时候，将border注释掉 */
+    margin: 20px;
+    padding: 30px;
+}

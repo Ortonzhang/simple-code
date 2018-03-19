@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0%;
+}
+body{
+    width: 600px;
+    height: 900px;
+    background: url('../images/parrot.jpg') no-repeat;
+}
+div{
+    /* width: 200px;
+    height: 200px;
+    background: greenyellow;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle(); */
+    width: 600px;
+    height: 900px;
+    shape-outside: url('../images/parrot-shape.png');
+    shape-image-threshold: .5;
+    float: left;
+    shape-margin: 10px;
+    
+}
+p{
+    padding-top: 50px;
+}

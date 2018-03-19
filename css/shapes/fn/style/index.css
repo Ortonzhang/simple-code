@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flow-root;  /* 创建一个BFC */
+}
+div{
+    float: left;
+    width: 200px;
+    height: 200px;
+    /* background: lightskyblue; */
+    border-radius: 50%;
+    /* shape-outside: circle(100px at 30% 40% ); */  /*  定义圆形 */
+    /* shape-outside: ellipse(30px 90px at 100px 100px); */  /*  定义椭圆形 */
+    shape-outside: inset(10% round 50px 20px 40px 0); /*  定义矩形 */
+    /* shape-outside: polygon() */
+    /* margin: 20px;
+    padding: 30px; */
+}

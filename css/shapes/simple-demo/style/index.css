@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flow-root;  /* 创建一个BFC */
+}
+div{
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: lightskyblue;
+    border-radius: 50%;
+    shape-outside: border-box;
+}
