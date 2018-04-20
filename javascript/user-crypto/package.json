@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server/index.js"
   },
-  "keywords": [],
+  "keywords": ["小程序登录鉴权", "数据解密"],
   "author": "",
   "license": "ISC",
   "dependencies": {

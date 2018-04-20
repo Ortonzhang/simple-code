@@ -2,7 +2,7 @@ const koa = require('koa')
 
 const WXBizDataCrypt = require('./WXBizDataCrypt')
 
-const appId =  'wx98591ca7659eb4f9'
+const appId =  'appId'
 
 const request = require('request')
 
@@ -50,8 +50,8 @@ function getUserInfo(code){
         let options = {
             url: 'https://api.weixin.qq.com/sns/jscode2session',
             qs:{
-                appid: 'wx98591ca7659eb4f9',
-                secret: '6a056a220ba46902dc889e3719b264ed',
+                appid: 'appid',
+                secret: 'secret',
                 js_code:code,
                 grant_type:'authorization_code'
             }
