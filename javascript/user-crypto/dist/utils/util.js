@@ -20,7 +20,7 @@ const login = () => {
     wx.login({
       success: function (ret) {
         wx.request({
-          url: 'http://172.28.16.196:3000/use',
+          url: 'http://172.28.19.136:3000/use',
           method: 'POST',
           data: {
             code: ret.code,

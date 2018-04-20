@@ -66,14 +66,11 @@ function getUserInfo(code){
             let data = {
                 key: skey
             }
-            console.log(skey + 'skey')
-
-            if(USERINFO.find((item) => item.openid == body.openid)){
+            if(USERINFO.length){
                 USERINFO.forEach((item) => {
-                    console.log(item)
                     if(item.openid ==  body.openid){
                         item.session_key = body.session_key
-                        skey: skey
+                        item.skey = skey
                     }
                 })
             } else {
