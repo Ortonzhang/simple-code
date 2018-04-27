@@ -15,7 +15,7 @@ const crypto = require('crypto')
 const router = koaRouter()
 
 const logo = async function (ctx, next){
-    if(!ctx.request.header.skey && ctx.url!='/use'){
+    if(!ctx.request.header.skey && ctx.url!='/use' && ctx.url!='/'){
         ctx.response.status = 402
         ctx.body = '缺少字段'
         return
