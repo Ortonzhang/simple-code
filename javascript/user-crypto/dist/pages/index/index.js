@@ -85,7 +85,7 @@ Page({
   getrunData() {
     wx.getWeRunData({
       success: (ret) => {
-        app.Util.ajax('http://172.28.19.136:3000/crypto', { iv: ret.iv, data: ret.encryptedData }, 'post').then(_ => {
+        app.Util.ajax('http://172.28.17.99:3000/crypto', { iv: ret.iv, data: ret.encryptedData }, 'post').then(_ => {
           let data = _.stepInfoList
           if(data){
             let Dategroup = this.handleData(data)
