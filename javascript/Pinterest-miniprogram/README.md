@@ -3,7 +3,7 @@
 ## 效果图
 
 来来来，看啊看，外面的世界多好看，
-![](https://user-gold-cdn.xitu.io/2018/5/11/1634e2614793febc?w=371&h=580&f=gif&s=4841665)
+![](images/gif.gif)
 
 ## 数据
 
@@ -17,4 +17,4 @@
 
 将node目录中的server.js文件的ip改成自己的ip
 
-详情介绍请戳[掘金]()
+详情介绍请戳[掘金](https://juejin.im/post/5af549086fb9a07aad179335)
