@@ -1,0 +1,9 @@
+<view class='bar'>
+  <navigator url='/pages/clent/index' hover-class="first">css处理</navigator>
+  <navigator url='/pages/server/index' hover-class='second'>后端处理</navigator>
+</view>
+<view class="container">
+  <view wx:for="{{group}}" style='position:{{item.position}}; top: {{item.top}}; left:{{item.left}}; width:{{width}}rpx;' class='box box-{{index}}' wx:key="{{index}}">
+      <image  src='http://cued.xunlei.com/demos/publ/img/P_{{item.name}}.jpg' style=' height:{{height[index]}}px' bindload='load' data-index='{{index}}' class='image'></image>
+  </view>
+</view> 

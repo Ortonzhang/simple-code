@@ -1,0 +1,8 @@
+<view class='bar'>
+  <navigator url='/pages/clent/index' hover-class="first">前端处理</navigator>
+  <navigator url='/pages/server/index' hover-class='second'>后端处理</navigator>
+</view>
+<view class='container'>
+    <image src='{{item.url}}' wx:if="{{index % 2 != 0 }}" wx:for="{{list}}" mode='widthFix' wx:key="{{index}}"></image>
+     <image src='{{item.url}}' wx:if="{{index % 2 == 0 }}" wx:for="{{list}}" mode='widthFix' wx:key="{{index}}"></image> 
+</view> 

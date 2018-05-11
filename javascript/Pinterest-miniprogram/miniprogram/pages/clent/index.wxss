@@ -1,0 +1,19 @@
+.container{
+  position: relative;
+  display: flow-root;
+}
+.box{
+  float: left;
+  display: flex;
+  margin-left:5rpx;
+  box-shadow: 2rpx 2rpx 5rpx rgba(0,0,0,.3);
+  border: 1rpx solid #ccc;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.box:nth-child(2){
+  margin-left: 12rpx;
+}
+image{
+  width: 100%;
+}

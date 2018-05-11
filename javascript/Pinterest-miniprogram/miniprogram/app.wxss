@@ -1,0 +1,22 @@
+.bar{
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  padding: 0 30rpx;
+}
+navigator{
+  transition: all .4s;
+  color: rgba(0,0,0,.4);
+}
+.bar navigator:nth-child(1)::before{
+  content: '<<'
+}
+.bar navigator:nth-child(2)::after{
+  content: '>>'
+}
+.first{
+  transform: translateX(-10px);
+}
+.second{
+  transform: translateX(10px);
+}

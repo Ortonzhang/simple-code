@@ -1,0 +1,9 @@
+.container{
+  column-count: 2;
+  column-gap:2rpx;
+  padding-left: 8rpx;
+}
+image{
+  width: 182px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.4);
+}

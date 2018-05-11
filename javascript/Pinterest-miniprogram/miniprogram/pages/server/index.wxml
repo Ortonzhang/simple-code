@@ -1,0 +1,10 @@
+<view class='bar'>
+  <navigator url='/pages/index/index' hover-class="first">前端处理</navigator>
+  <navigator url='/pages/css/index' hover-class='second'>css处理</navigator>
+</view>
+<view class='container'>
+  <view class='pic pic-{{index}}' wx:for="{{list}}" style="height:{{item.height}}px;left:{{item.left}}; top:{{item.top}}; position:{{item.position}}" wx:key="{{item.index}}">
+    <image src='{{item.url}}' wx:if="{{item.show}}"></image>
+    <view class='default' wx:if="{{!item.show}}"></view>
+  </view>
+</view>
