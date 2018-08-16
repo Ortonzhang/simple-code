@@ -2,6 +2,53 @@
 jenkins 是一款流行的开源持续集成工具,广泛用于项目开发,具有自动化构建、测试和部署等功能。
 
 
+## Mac安装
+
+如果想在Mac上面安装jekens也是可以的，我们需要在本地下载java JSD，然后安装jenkens即可，安装包我已经放在了百度网盘上，可按照下面的步骤下载安装。
+
++ 安装JDK
+
+[点击下载](https://pan.baidu.com/s/1Ka7OtE5JzXo68mewm1jLWQ)，直接运行就行
+
++ 安装Jenkins
+
+[点击下载](https://pan.baidu.com/s/1WHFyj93ELxCPH9kwGgjlpQ) next 一路安装
+
+
+安装完成后，按照下面的`安装Jenkins`模块中的`按照提示，粘贴密码`以下步骤就可以愉快的玩耍Jenkins了。
+
+
+### QA
+
++ 安装后，运行中出现`该jenkins实例似乎已离线`字段
+
+当前页面不要动,然后打开一个新的tab，输入网址 http://localhost:8080/pluginManager/advanced  这里面最底下有个【升级站点】，把其中的链接改成http，http://updates.jenkins.io/update-center.json, 然后关闭Jenkins，重启就行了
+
++ 启动or关闭
+
+```bash
+# 开启
+sudo launchctl load /Library/LaunchDaemons/org.jenkins-ci.plist
+
+# 关闭
+sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist
+```
+
++ 卸载jenkins
+
+依次执行下面命令即可
+
+```bash
+sudo rm /Library/LaunchDaemons/org.jenkins-ci.plist
+
+sudo rm -rf /Applications/Jenkins "/Library/Application Support/Jenkins" /Library/Documentation/Jenkins
+
+sudo rm -rf /var/root/.jenkins ~/.jenkins # 删除配置文件
+
+
+```
+
+
 ## 安装java JDK
 
 安装jenkins其实就是敲命令，直接安装就行，首先安装依赖的java环境。以下代码，依次执行
@@ -58,7 +105,6 @@ systemctl stop firewalld.service   // 关闭防火墙
 systemctl start firewalld.service   // 开启防火墙
 systemctl disable firewalld.service  // 禁止开机自启动
 ```
-
 安全组找到配置规则
 
 ![](https://ws1.sinaimg.cn/large/006tKfTcly1frepsar700j31hb0jotc4.jpg)
