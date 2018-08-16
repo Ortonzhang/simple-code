@@ -49,7 +49,9 @@ sudo rm -rf /var/root/.jenkins ~/.jenkins # 删除配置文件
 ```
 
 
-## 安装java JDK
+## 虚拟机安装
+
+### 安装java JDK
 
 安装jenkins其实就是敲命令，直接安装就行，首先安装依赖的java环境。以下代码，依次执行
 
@@ -77,7 +79,7 @@ export JAVA_HOME JRE_HOME CLASS_PATH PATH
 ![](https://ws3.sinaimg.cn/large/006tKfTcly1frepeo2p5gj30bg01qdfx.jpg)
 
 
-## 安装Jenkins
+### 安装Jenkins
 
 1、 执行 `sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo` 拉取库的配置到本地对应文件
 
@@ -135,9 +137,9 @@ systemctl disable firewalld.service  // 禁止开机自启动
 ![](https://ws1.sinaimg.cn/large/006tKfTcly1freq1gpv4zj30ns0fz3za.jpg)
 
 
-## 源码管理
-
 ### 源码管理
+
+#### 源码管理
 
 通过上面的几步，我们已经安装好了Jenkins，接下来，我们开始我们的自动化构建之旅。
 
@@ -155,7 +157,7 @@ systemctl disable firewalld.service  // 禁止开机自启动
 
 分支默认选择master。
 
-### git webhooks
+#### git webhooks
 
 1、选择系统管理 => 管理插件下面的可选插件，输入`Generic Webhook Trigger`，选中后直接安装
 
@@ -194,7 +196,7 @@ payload URL格式如下
 ![](https://ws1.sinaimg.cn/large/006tKfTcly1freqb3kb8hj30se0c50ue.jpg)
 
 
-## 自动化构建
+### 自动化构建
 
 前面我们配置了webhooks钩子，当我们拿到代码后，要做些什么呢？我们要执行一些命令，测试、安装依赖、压缩资源等等，这就是我们说的自动化构建，接下来，我们以生成`package.json`文件为例来演示下
 
@@ -228,7 +230,7 @@ payload URL格式如下
 为啥？为了我们接下来的自动化部署
 
 
-##自动化部署
+###自动化部署
 
 通过Jenkins的`Publish Over SSH`的插件，可以使我们完成自动化部署，它的流程如下:
 
@@ -271,7 +273,7 @@ payload URL格式如下
 
 
 
-## 发送邮件
+### 发送邮件
 
 1、找到`Extended E-mail Notification`，填写下面的配置， 如果也是qq邮箱，只需要改下面标红的
 
@@ -305,7 +307,7 @@ payload URL格式如下
 4、构建完成后，Jenkins就会给我们发送邮件了。
 ![](https://ws3.sinaimg.cn/large/006tKfTcly1freqki3yeyj30sb0anab9.jpg)
 
-## 总结
+### 总结
 
 Jenkins还可以做很多事情，我们只是窥探了它的冰山一角，不过也够用了，最后看下我们的工作流程
 
