@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 87599 */
+  src: url('//at.alicdn.com/t/font_87599_obdy62g065s.eot');
+  src: url('//at.alicdn.com/t/font_87599_obdy62g065s.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_87599_obdy62g065s.woff') format('woff'),
+  url('//at.alicdn.com/t/font_87599_obdy62g065s.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_87599_obdy62g065s.svg#iconfont') format('svg');
+}
+.box{
+  width: 600px;
+  height: 350px;
+  border: 1px dashed lightslategray;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 350px;
+  transition: all .3s;
+  &:hover{
+    border-color: #2b7ccb !important;
+    transform: translateY(-10px);
+  }
+  .img-box{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    .mask{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,.3);
+      opacity: 0;
+      .icon{
+        font-family: 'iconfont';
+        font-style: normal;
+        font-size: 60px;
+        color: white;
+        transition: all 0.5s;
+        display: inline-block;
+        transform: translateY(215px);
+      }
+    }
+
+    &:hover .mask{
+      opacity: 1;
+      .icon{
+        transform: translateY(0);
+      }
+    }
+  }
+}
