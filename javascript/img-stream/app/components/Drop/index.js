@@ -38,7 +38,9 @@ export default class Drop extends Component {
 
  
 
-  remove = () => {
+  remove = (event) => {
+    // bug fix: stop the propagation to the click method.
+    event.stopPropagation();
     this.setState({src: ''})
   }
 
