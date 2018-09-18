@@ -3,6 +3,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
+import PropTypes from 'prop-types';
 
 export default class Menus extends Component{
 
@@ -13,6 +14,10 @@ export default class Menus extends Component{
     }
   }
 
+  propTypes = {
+    history: PropTypes.any,
+    css: PropTypes.any
+  }
 
   click = (path) => {
     this.props.history.location.pathname !== path && this.props.history.push({pathname: path})
@@ -31,7 +36,7 @@ export default class Menus extends Component{
     const { anchorEl } = this.state;
     const open = Boolean(anchorEl);
     return(
-      <div style={this.props.style}>
+      <div style={this.props.css}>
         <IconButton onClick={this.handleClick}>
           <MenuIcon/>
         </IconButton>

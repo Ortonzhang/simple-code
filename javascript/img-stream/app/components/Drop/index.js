@@ -5,7 +5,7 @@ export default class Drop extends Component {
   constructor(props){
     super(props)
     this.state = {
-      src: '',
+      src: '', 
     }
   }
 
@@ -36,7 +36,7 @@ export default class Drop extends Component {
     }
   }
 
- 
+
 
   remove = (event) => {
     // bug fix: stop the propagation to the click method.

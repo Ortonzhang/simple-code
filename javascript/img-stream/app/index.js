@@ -16,7 +16,7 @@ class App extends Component{
     return(
       <Router>
           <div style={Style['box']}>
-            <Menus style={Style['menu']} history={history}/>
+            <Menus css={Style['menu']} history={history}/>
             <Switch>
               <Route path="/" exact component={ Drop }/>
               <Route path="/paset"  component={Paset}/>
