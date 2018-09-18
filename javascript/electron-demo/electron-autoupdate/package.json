@@ -1,0 +1,66 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.3",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager .",
+    "builder": "electron-builder"
+  },
+  "build": {
+    "appId": "org.simulatedgreg.electron-1212",
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "http://172.28.82.40:8080" 
+      }
+    ],
+    "productName": "我的",
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    },
+    "dmg": {
+      "backgroundColor": "red",
+      "title": "made",
+      "contents": [
+        {
+          "x": 400,
+          "y": 128,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    }
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-builder": "^20.28.3",
+    "electron-packager": "^12.1.1"
+  },
+  "dependencies": {
+    "electron-updater": "^3.1.2"
+  }
+}

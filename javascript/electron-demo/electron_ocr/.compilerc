@@ -1,0 +1,40 @@
+{
+  "env": {
+    "development": {
+      "application/javascript": {
+        "presets": ["env", "react"],
+        "sourceMaps": "inline",
+        "plugins": [
+          ["transform-runtime", {
+            "polyfill": false,
+            "regenerator": true
+          }]
+        ]
+      },
+      "text/less": {
+        "dumpLineNumbers": "comments"
+      },
+      "text/scss": {
+        "dumpLineNumbers": "comments"
+      }
+    },
+    "production": {
+      "application/javascript": {
+        "presets": ["env", "react"],
+        "sourceMaps": "none",
+        "plugins": [
+          ["transform-runtime", {
+            "polyfill": false,
+            "regenerator": true
+          }]
+        ]
+      },
+      "text/less": {
+        "dumpLineNumbers": "comments"
+      },
+      "text/scss": {
+        "dumpLineNumbers": "comments"
+      }
+    }
+  }
+}

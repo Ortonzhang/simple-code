@@ -1,0 +1,12 @@
+.box{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  margin: auto;
+  transition: all .3s;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 53px;
+  background: rgba(255,255,255,.4);
+  box-sizing: border-box;
+}
