@@ -1,6 +1,6 @@
 # vuex
 
-项目包含两个vue的项目，共三个vuex示例
+项目包含两个vue的项目，共三个vuex示例。
 
 ## todo list
 
