@@ -7,7 +7,7 @@ Page({
       title: 'css实现',
     })
       wx.request({
-        url: 'http://172.28.85.57:3000/data',
+        url: 'http://172.28.83.117:3000/data',
         success: (ret) => {
           this.setData({
             list: ret.data

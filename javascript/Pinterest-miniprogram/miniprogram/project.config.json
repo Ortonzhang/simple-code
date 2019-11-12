@@ -12,6 +12,8 @@
 	"appid": "wx98591ca7659eb4f9",
 	"projectname": "Pinterest",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
