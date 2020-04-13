@@ -1,0 +1,17 @@
+{
+  "name": "koa-rxjs-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-router": "^8.0.8",
+    "koa-static": "^5.0.0"
+  }
+}
