@@ -28,7 +28,7 @@
   "dependencies": {
     "cuid": "^2.1.4",
     "electron-compile": "^6.4.3",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.13.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-dropzone": "^5.0.1",
