@@ -25,9 +25,9 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.13.1",
     "parcel-bundler": "^1.12.3",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "vue-template-compiler": "^2.6.10"
   }
 }
