@@ -27,7 +27,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "node-sass": "^4.7.2",
     "parcel-bundler": "^1.12.3",
-    "pug": "^2.0.3",
+    "pug": "^3.0.1",
     "vue-template-compiler": "^2.6.10"
   }
 }
