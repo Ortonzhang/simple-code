@@ -19,7 +19,7 @@
     "eslint-config-google": "^0.10.0",
     "node-sass": "^4.13.1",
     "parcel-bundler": "^1.9.7",
-    "postcss-modules": "^1.3.2",
+    "postcss-modules": "^1.5.0",
     "react-router-redux": "^4.0.8"
   },
   "dependencies": {
