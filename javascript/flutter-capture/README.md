@@ -30,11 +30,11 @@ ios上有类似`Drony`的软件，这里使用`Shadowrocket`进行VPN的设置
   2、通过ipa文件进行安装，安装包同样放在了`package`文件夹，电脑采用爱思助手数据线连接手机，通过加载本地文件安装到手机上
 
 打开app显示如下，服务器节点默认是没有的，点击右上角添加节点
-![](./images/1.png)
+![](./images/11.png)
 
 同样地址和端口添加Charles的配置
-![](./images/2.png)
+![](./images/22.png)
 
 完成后选中添加的节点，点击连接后就可以抓包了
-![](./images/3.png)
+![](./images/33.png)
 
