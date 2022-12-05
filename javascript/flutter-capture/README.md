@@ -38,3 +38,21 @@ ios上有类似`Drony`的软件，这里使用`Shadowrocket`进行VPN的设置
 完成后选中添加的节点，点击连接后就可以抓包了
 ![](./images/33.png)
 
+## Charles
+
+找到 Proxy - SSL Proxying Settings，点击 Add，Host填* prot填443。
+![](./images/ssl.png)
+
+
+手机访问`chls.pro/ssl` 下载并安装描述文件
+
+![](./images/ssl-phone.png)
+
+## QA
+
+1、https请求报错SSL handshake with client failed
+![](./images/charles-error1.png)
+![](./images/charles-error-1-1.png)
+
+iPhone上依次选择 设置-通用-关于本机-证书信任设置，将Charles证书勾选完全信任
+![](./images/Charles1.jpg)
